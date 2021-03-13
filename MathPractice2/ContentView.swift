@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    //Create variable to store user guess
+    @State var guess: String = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(alignment: .leading) {
+            Text("Guess")
+            TextField("Enter Guess Here", text: $guess )
+        }
+        .padding()
+        
     }
 }
 
