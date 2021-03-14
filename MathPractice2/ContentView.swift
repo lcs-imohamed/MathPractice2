@@ -19,6 +19,13 @@ struct ContentView: View {
     
     @State var multiplier: Int = 0
     @State var multiplicand: Int = 2
+    var actualAnswer: Int {
+        if guess = 0 {
+            return "\(guess) is the correct answer"
+        } else {
+            return "\(guess) is incorrect. The answer is "
+        }
+    }
         
     var body: some View {
         
