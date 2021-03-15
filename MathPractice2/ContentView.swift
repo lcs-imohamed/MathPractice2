@@ -19,38 +19,46 @@ struct ContentView: View {
     
     @State var multiplier: Int = 0
     @State var multiplicand: Int = 2
+    @State var result: String = ""
     var actualAnswer: Int {
-        if guess = 0 {
-            return "\(guess) is the correct answer"
-        } else {
-            return "\(guess) is incorrect. The answer is "
-        }
+        return multiplier * multiplicand
     }
-        
+    var guessAsInteger: Int {
+        //When can't convert to an integer, returns 0
+        return Int(guess) ?? 0
+    }
+    
+    
     var body: some View {
         
         VStack {
             Text("Question: \(multiplier) x \(multiplicand) = ?")
                 .padding()
-            Text("Result:")
+            Text("Result: \(result)")
                 .padding()
-            Text("Guess:")
+            Text("Guess: \(guessAsInteger)")
                 .padding()
             TextField("Enter Guess Here", text: $guess )
-                
-                //Add button to submit user guess
-                //            Button("Submit Guess") {
-                //                var guess
-                //            }
-                //        }
-                .padding()
             
+            //Add button to submit user guess
+            Button("Submit Guess") {
+                //Check the guess
+                if guessAsInteger == actualAnswer {
+                    result = "correct"
+                    
+                }else{
+                    result = "incorrect"
+                }
+            }
         }
-    }
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+        .padding()
+        
     }
 }
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
