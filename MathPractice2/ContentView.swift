@@ -17,8 +17,8 @@ struct ContentView: View {
     
     //Create variables for different parts of the mulitplication question
     
-    @State var multiplier: Int = 0
-    @State var multiplicand: Int = 2
+    @State var multiplier: Int = Int.random(in: 0...12)
+    @State var multiplicand: Int = Int.random(in: 0...12)
     @State var result: String = ""
     var actualAnswer: Int {
         return multiplier * multiplicand
