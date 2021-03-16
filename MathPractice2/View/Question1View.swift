@@ -1,25 +1,29 @@
 //
-//  ContentView.swift
+//  Question1View.swift
 //  MathPractice2
 //
-//  Created by Mohamed, Ilana on 2021-03-10.
+//  Created by Mohamed, Ilana on 2021-03-16.
 //
 
 import SwiftUI
 
-struct ContentView: View {
-    
+struct Question1View: View {
     //MARK: Properties
     
     //Create variable to store user guess
     
     @State var guess: String = ""
     
-    //Create variables for different parts of the mulitplication question
     
+    //Create variables for different parts of the mulitplication question
     @State var multiplier: Int = Int.random(in: 0...12)
     @State var multiplicand: Int = Int.random(in: 0...12)
     @State var result: String = ""
+    
+    
+    //Whether to show this view or not
+    @Binding var showing: Bool
+    
     var actualAnswer: Int {
         return multiplier * multiplicand
     }
@@ -27,10 +31,7 @@ struct ContentView: View {
         //When can't convert to an integer, returns 0
         return Int(guess) ?? 0
     }
-    
-    
     var body: some View {
-        
         VStack {
             Text("Question: \(multiplier) x \(multiplicand) = ?")
                 .padding()
@@ -52,13 +53,11 @@ struct ContentView: View {
             }
         }
         .padding()
-        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Question1View_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Question1View(showing: .constant(true))
     }
 }
-
