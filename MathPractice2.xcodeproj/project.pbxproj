@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		332FA0FA2600ED1400FBC582 /* Question1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA0F92600ED1400FBC582 /* Question1View.swift */; };
+		332FA0FA2600ED1400FBC582 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA0F92600ED1400FBC582 /* QuestionView.swift */; };
 		3354415325F92A14008B17BA /* MathPractice2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354415225F92A14008B17BA /* MathPractice2App.swift */; };
 		3354415525F92A14008B17BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354415425F92A14008B17BA /* ContentView.swift */; };
 		3354415725F92A19008B17BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3354415625F92A19008B17BA /* Assets.xcassets */; };
@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		332FA0F92600ED1400FBC582 /* Question1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question1View.swift; sourceTree = "<group>"; };
+		332FA0F92600ED1400FBC582 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		3354414F25F92A14008B17BA /* MathPractice2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathPractice2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3354415225F92A14008B17BA /* MathPractice2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathPractice2App.swift; sourceTree = "<group>"; };
 		3354415425F92A14008B17BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				3354415425F92A14008B17BA /* ContentView.swift */,
-				332FA0F92600ED1400FBC582 /* Question1View.swift */,
+				332FA0F92600ED1400FBC582 /* QuestionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,7 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				332FA0FA2600ED1400FBC582 /* Question1View.swift in Sources */,
+				332FA0FA2600ED1400FBC582 /* QuestionView.swift in Sources */,
 				3354415525F92A14008B17BA /* ContentView.swift in Sources */,
 				3354415325F92A14008B17BA /* MathPractice2App.swift in Sources */,
 			);

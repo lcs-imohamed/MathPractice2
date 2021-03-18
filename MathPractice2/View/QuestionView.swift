@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Question1View: View {
+struct QuestionView: View {
     //MARK: Properties
     
     //Create variable to store user guess
@@ -40,6 +40,8 @@ struct Question1View: View {
             Text("Guess: \(guessAsInteger)")
                 .padding()
             TextField("Enter Guess Here", text: $guess )
+                
+            
             
             //Add button to submit user guess
             Button("Submit Guess") {
@@ -56,8 +58,8 @@ struct Question1View: View {
     }
 }
 
-struct Question1View_Previews: PreviewProvider {
+struct QuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        Question1View(showing: .constant(true))
+        QuestionView(showing: .constant(true))
     }
 }

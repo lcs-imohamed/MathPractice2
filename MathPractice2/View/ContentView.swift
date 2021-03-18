@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     //Controls whether question1 is showing
-    @State private var showingQuestion1 = false
+    @State private var showingQuestion = false
     
     
     var body: some View {
@@ -19,16 +19,16 @@ struct ContentView: View {
             Text("Math Practice App")
                 .padding(50)
                 .font(.title)
-            
+                
             Text("Practice Multiplication")
                 .padding()
             Button("Go") {
                 //Show question1 when user presses go
-                showingQuestion1 = true
+                showingQuestion = true
             }
             //View modifier
-            .sheet(isPresented: $showingQuestion1) {
-                Question1View(showing: $showingQuestion1)
+            .sheet(isPresented: $showingQuestion) {
+                QuestionView(showing: $showingQuestion)
             }
 
         }
