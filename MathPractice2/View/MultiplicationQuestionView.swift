@@ -1,5 +1,5 @@
 //
-//  Question1View.swift
+//  MultiplicationQuestionView.swift
 //  MathPractice2
 //
 //  Created by Mohamed, Ilana on 2021-03-16.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct QuestionView: View {
+struct MultiplicationQuestionView: View {
     
     @ObservedObject var store: ResultsStore
     
@@ -83,8 +83,8 @@ struct QuestionView: View {
     }
 }
 
-struct QuestionView_Previews: PreviewProvider {
+struct MultiplicationQuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        QuestionView(store: testStore, showing: .constant(true))
+        MultiplicationQuestionView(store: testStore, showing: .constant(true))
     }
 }

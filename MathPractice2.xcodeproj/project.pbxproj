@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		332FA0FA2600ED1400FBC582 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA0F92600ED1400FBC582 /* QuestionView.swift */; };
+		332FA0FA2600ED1400FBC582 /* MultiplicationQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA0F92600ED1400FBC582 /* MultiplicationQuestionView.swift */; };
 		3354415325F92A14008B17BA /* MathPractice2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354415225F92A14008B17BA /* MathPractice2App.swift */; };
 		3354415525F92A14008B17BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354415425F92A14008B17BA /* ContentView.swift */; };
 		3354415725F92A19008B17BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3354415625F92A19008B17BA /* Assets.xcassets */; };
 		3354415A25F92A19008B17BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3354415925F92A19008B17BA /* Preview Assets.xcassets */; };
+		339941FA26040A1000819783 /* SubtractionQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339941F926040A1000819783 /* SubtractionQuestionView.swift */; };
 		33D796032603B1BC00350860 /* ResultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D796022603B1BC00350860 /* ResultsStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		332FA0F92600ED1400FBC582 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		332FA0F92600ED1400FBC582 /* MultiplicationQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationQuestionView.swift; sourceTree = "<group>"; };
 		3354414F25F92A14008B17BA /* MathPractice2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathPractice2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3354415225F92A14008B17BA /* MathPractice2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathPractice2App.swift; sourceTree = "<group>"; };
 		3354415425F92A14008B17BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3354415625F92A19008B17BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3354415925F92A19008B17BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3354415B25F92A19008B17BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339941F926040A1000819783 /* SubtractionQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionQuestionView.swift; sourceTree = "<group>"; };
 		33D796022603B1BC00350860 /* ResultsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				3354415425F92A14008B17BA /* ContentView.swift */,
-				332FA0F92600ED1400FBC582 /* QuestionView.swift */,
+				332FA0F92600ED1400FBC582 /* MultiplicationQuestionView.swift */,
+				339941F926040A1000819783 /* SubtractionQuestionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,7 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				33D796032603B1BC00350860 /* ResultsStore.swift in Sources */,
-				332FA0FA2600ED1400FBC582 /* QuestionView.swift in Sources */,
+				332FA0FA2600ED1400FBC582 /* MultiplicationQuestionView.swift in Sources */,
+				339941FA26040A1000819783 /* SubtractionQuestionView.swift in Sources */,
 				3354415525F92A14008B17BA /* ContentView.swift in Sources */,
 				3354415325F92A14008B17BA /* MathPractice2App.swift in Sources */,
 			);

@@ -10,8 +10,11 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var store: ResultsStore
     
-    //Controls whether question1 is showing
-    @State private var showingQuestion = false
+    //Controls whether multiplication question is showing
+    @State private var showingMultiplicationQuestion = false
+    
+    //Controls whether subtraction question is showing
+    @State private var showingSubtractionQuestion = false
     
     
     var body: some View {
@@ -23,15 +26,24 @@ struct ContentView: View {
             
             Text("Current score: \(store.score)")
                 
-            Text("Practice Multiplication")
-                .padding()
-            Button("Go") {
-                //Show question1 when user presses go
-                showingQuestion = true
+            Button("Practice Subtraction") {
+                //show subtraction questions when pressed
+                showingSubtractionQuestion = true
             }
-            //View modifier
-            .sheet(isPresented: $showingQuestion) {
-                QuestionView(store: store, showing: $showingQuestion)
+            
+            //View modifier to show subtraction questions
+           
+            .sheet(isPresented: $showingSubtractionQuestion) {
+                SubtractionQuestionView(store: store, showing: $showingSubtractionQuestion)
+            }
+            
+            Button("Practice Multiplication") {
+                //Show multiplication questions when pressed
+                showingMultiplicationQuestion = true
+            }
+            //View modifier to show multiplicationquestion
+            .sheet(isPresented: $showingMultiplicationQuestion) {
+                MultiplicationQuestionView(store: store, showing: $showingMultiplicationQuestion)
             }
 
         }
