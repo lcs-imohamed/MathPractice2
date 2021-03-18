@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var store: ResultsStore
     
     //Controls whether question1 is showing
     @State private var showingQuestion = false
@@ -19,6 +20,8 @@ struct ContentView: View {
             Text("Math Practice App")
                 .padding(50)
                 .font(.title)
+            
+            Text("Current score: \(store.score)")
                 
             Text("Practice Multiplication")
                 .padding()
@@ -28,7 +31,7 @@ struct ContentView: View {
             }
             //View modifier
             .sheet(isPresented: $showingQuestion) {
-                QuestionView(showing: $showingQuestion)
+                QuestionView(store: store, showing: $showingQuestion)
             }
 
         }
@@ -40,7 +43,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ContentView()
+            ContentView(store: testStore)
         }
        
     }

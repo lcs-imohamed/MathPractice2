@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct MathPractice2App: App {
+    
+    @StateObject private var store = ResultsStore()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView(store: store)
+            }
+            
+            
         }
     }
 }

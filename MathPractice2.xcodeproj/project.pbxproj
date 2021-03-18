@@ -12,6 +12,7 @@
 		3354415525F92A14008B17BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354415425F92A14008B17BA /* ContentView.swift */; };
 		3354415725F92A19008B17BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3354415625F92A19008B17BA /* Assets.xcassets */; };
 		3354415A25F92A19008B17BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3354415925F92A19008B17BA /* Preview Assets.xcassets */; };
+		33D796032603B1BC00350860 /* ResultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D796022603B1BC00350860 /* ResultsStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3354415625F92A19008B17BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3354415925F92A19008B17BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3354415B25F92A19008B17BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D796022603B1BC00350860 /* ResultsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		332FA0F22600EC9D00FBC582 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				33D796022603B1BC00350860 /* ResultsStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -70,9 +73,9 @@
 		3354415125F92A14008B17BA /* MathPractice2 */ = {
 			isa = PBXGroup;
 			children = (
+				3354415225F92A14008B17BA /* MathPractice2App.swift */,
 				332FA0F32600ECA300FBC582 /* View */,
 				332FA0F22600EC9D00FBC582 /* Model */,
-				3354415225F92A14008B17BA /* MathPractice2App.swift */,
 				3354415625F92A19008B17BA /* Assets.xcassets */,
 				3354415B25F92A19008B17BA /* Info.plist */,
 				3354415825F92A19008B17BA /* Preview Content */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D796032603B1BC00350860 /* ResultsStore.swift in Sources */,
 				332FA0FA2600ED1400FBC582 /* QuestionView.swift in Sources */,
 				3354415525F92A14008B17BA /* ContentView.swift in Sources */,
 				3354415325F92A14008B17BA /* MathPractice2App.swift in Sources */,

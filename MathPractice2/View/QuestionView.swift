@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct QuestionView: View {
+    
+    @ObservedObject var store: ResultsStore
+    
     //MARK: Properties
     
     //Create variable to store user guess
@@ -32,34 +35,56 @@ struct QuestionView: View {
         return Int(guess) ?? 0
     }
     var body: some View {
-        VStack {
-            Text("Question: \(multiplier) x \(multiplicand) = ?")
-                .padding()
-            Text("Result: \(result)")
-                .padding()
-            Text("Guess: \(guessAsInteger)")
-                .padding()
-            TextField("Enter Guess Here", text: $guess )
-                
-            
-            
-            //Add button to submit user guess
-            Button("Submit Guess") {
-                //Check the guess
-                if guessAsInteger == actualAnswer {
-                    result = "correct"
+        NavigationView {
+            VStack {
+                Text("Question: \(multiplier) x \(multiplicand) = ?")
+                    .padding()
+                Text("Result: \(result)")
+                    .padding()
+                Text("Guess: \(guessAsInteger)")
+                    .padding()
+                TextField("Enter Guess Here", text: $guess )
                     
-                }else{
-                    result = "incorrect"
+                
+                
+                //Add button to submit user guess
+                Button("Submit Guess") {
+                    //Check the guess
+                    if guessAsInteger == actualAnswer {
+                        result = "correct"
+                        
+                    }else{
+                        result = "incorrect"
+                    }
+                }
+            }
+            .padding()
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button("Close") {
+                        closeWindow()
+                    }
                 }
             }
         }
-        .padding()
+
+    }
+    
+    func closeWindow() {
+       
+        //Check if answer is correct or not
+        if result == "correct" {
+            store.score += 1
+        }
+        //Dismiss this view
+        showing = false
+        
+        
     }
 }
 
 struct QuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        QuestionView(showing: .constant(true))
+        QuestionView(store: testStore, showing: .constant(true))
     }
 }
